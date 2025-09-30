@@ -194,66 +194,6 @@ h2 {
     font-weight: bold;
     color: var(--accent-burgundy);
 }
-
-/* Контакты */
-.contact-info {
-    background: var(--darker-bg);
-    padding: 50px;
-    border-radius: 15px;
-    border: 1px solid #333;
-    max-width: 500px;
-    margin: 0 auto;
-}
-
-.contact-info h3 {
-    color: var(--accent-gold);
-    margin-bottom: 30px;
-    font-size: 1.8em;
-}
-
-.contact-info p {
-    margin-bottom: 15px;
-    font-size: 1.1em;
-}
-
-.social-links {
-    margin-top: 30px;
-}
-
-.social-links a {
-    color: var(--accent-burgundy);
-    text-decoration: none;
-    margin-right: 20px;
-    transition: color 0.3s ease;
-}
-
-.social-links a:hover {
-    color: var(--accent-gold);
-}
-
-/* Подвал */
-footer {
-    background: var(--darker-bg);
-    text-align: center;
-    padding: 40px 0;
-    border-top: 1px solid #333;
-}
-
-/* Адаптивность */
-@media (max-width: 768px) {
-    header h1 {
-        font-size: 3em;
-    }
-    
-    h2 {
-        font-size: 2.5em;
-    }
-    
-    .menu-grid,
-    .info-grid {
-        grid-template-columns: 1fr;
-    }
-}
 /* Полное меню */
 #full-menu {
     background: var(--darker-bg);
@@ -345,4 +285,64 @@ footer {
 /* Плавная прокрутка к меню */
 html {
     scroll-behavior: smooth;
+}
+
+/* Контакты */
+.contact-info {
+    background: var(--darker-bg);
+    padding: 50px;
+    border-radius: 15px;
+    border: 1px solid #333;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contact-info h3 {
+    color: var(--accent-gold);
+    margin-bottom: 30px;
+    font-size: 1.8em;
+}
+
+.contact-info p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.social-links {
+    margin-top: 30px;
+}
+
+.social-links a {
+    color: var(--accent-burgundy);
+    text-decoration: none;
+    margin-right: 20px;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--accent-gold);
+}
+
+/* Подвал */
+footer {
+    background: var(--darker-bg);
+    text-align: center;
+    padding: 40px 0;
+    border-top: 1px solid #333;
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 3em;
+    }
+    
+    h2 {
+        font-size: 2.5em;
+    }
+    
+    .menu-grid,
+    .info-grid {
+        grid-template-columns: 1fr;
+    }
 }
