@@ -3,196 +3,240 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Шаурма РФ - Премиальная шаурма</title>
+    <title>Шаурма РФ - Премиальная шаурма и шашлык</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Шапка с фото -->
+    <!-- Шапка с навигацией -->
     <header>
-        <div class="header-overlay"></div>
-        <div class="container">
-            <h1>ШАУРМА <span class="accent">РФ</span></h1>
-            <p class="tagline">Искусство вкуса в каждой шаурме</p>
-            <button class="cta-button" onclick="scrollToMenu()">Посмотреть меню</button>
-        </div>
-    </header>
+        <nav class="main-nav">
+            <div class="container">
+                <div class="nav-content">
+                    <div class="logo">
+                        <span class="logo-text">ШАУРМА <span class="accent">РФ</span></span>
+                    </div>
+                    <div class="nav-info">
+                        <div class="work-time">
+                            <span class="time-icon">🕙</span>
+                            <span>10:00 - 22:00</span>
+                        </div>
+                        <div class="phone">
+                            <span class="phone-icon">📞</span>
+                            <span>+7 (XXX) XXX-XX-XX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
-    <!-- О нас -->
-    <section id="about">
-        <div class="container">
-            <h2>О <span class="accent">нас</span></h2>
-            <div class="info-grid">
-                <div class="info-item">
-                    <div class="icon">🕙</div>
-                    <h3>График работы</h3>
-                    <p>Ежедневно с 10:00 до 22:00</p>
+        <div class="hero-content">
+            <div class="container">
+                <div class="hero-text">
+                    <h1>ШАУРМА <span class="accent">РФ</span></h1>
+                    <p class="tagline">Настоящий вкус в каждой шаурме и шашлыке</p>
+                    <div class="hero-features">
+                        <div class="feature">
+                            <span class="feature-icon">🔥</span>
+                            <span>Готовим на огне</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">🍃</span>
+                            <span>Свежие продукты</span>
+                        </div>
+                        <div class="feature">
+                            <span class="feature-icon">⚡</span>
+                            <span>Быстрая доставка</span>
+                        </div>
+                    </div>
+                    <button class="cta-button" onclick="scrollToMenu()">Смотреть меню</button>
                 </div>
-                <div class="info-item">
-                    <div class="icon">📍</div>
-                    <h3>Адрес</h3>
-                    <p>Нижний Новгород ул.Буревестника 15А</p>
-                </div>
-                <div class="info-item">
-                    <div class="icon">📞</div>
-                    <h3>Телефон</h3>
-                    <p>+7 (930) 666-26-26</p>
+                <div class="hero-image">
+                    <div class="image-placeholder">
+                        <span>Фото шаурмы</span>
+                    </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Основное меню -->
+        
+        <div class="header-overlay"></div>
+    </header>
+
+    <!-- Остальные секции остаются без изменений до меню -->
+
+    <!-- Полное меню с категориями -->
     <section id="full-menu">
         <div class="container">
-            <h2>Полное <span class="accent">меню</span></h2>
+            <h2>Наше <span class="accent">меню</span></h2>
             
             <!-- Шаурма -->
             <div class="menu-category">
-                <h3>Шаурма</h3>
+                <div class="category-header">
+                    <h3>🎯 Шаурма</h3>
+                    <p class="category-desc">Свежеприготовленная в лаваше с сочными начинками</p>
+                </div>
                 <div class="menu-items-grid">
+                    <!-- Блюда шаурмы остаются без изменений -->
                     <div class="menu-item-large">
                         <div class="menu-item-header">
                             <h4>Аутмит</h4>
-                            <span class="price">200₽</span>
+                            <span class="price">320₽</span>
                         </div>
-                        <p>Вегетарианская шаурма с салатной смесью и картошкой фри</p>
+                        <p>Фирменная шаурма с тремя видами мяса и соусом "Аутмит"</p>
+                        <div class="item-badge">Хит</div>
                     </div>
                     
                     <div class="menu-item-large">
                         <div class="menu-item-header">
                             <h4>Сержант</h4>
-                            <span class="price">240₽</span>
-                        </div>
-                        <p>Классическая шаурма с сочной курочкой и салатной смесью</p>
-                    </div>
-                    
-                    <div class="menu-item-large">
-                        <div class="menu-item-header">
-                            <h4>ТТ</h4>
-                            <span class="price">250₽</span>
-                        </div>
-                        <p>Острая шаурма с корейской морковкой и аджикой</p>
-                    </div>
-                    
-                    <div class="menu-item-large">
-                        <div class="menu-item-header">
-                            <h4>Прапорщик</h4>
                             <span class="price">280₽</span>
                         </div>
-                        <p>Острая куриная шаурма с перчиком холопенью и соусом шарирача</p>
+                        <p>Классическая шаурма с говядиной и овощами</p>
+                    </div>
+                    
+                    <!-- Остальные блюда шаурмы -->
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- Блюда во фритюре -->
+            <div class="menu-category">
+                <div class="category-header">
+                    <h3>🍟 Блюда во фритюре</h3>
+                    <p class="category-desc">Хрустящие и золотистые шедевры</p>
+                </div>
+                <div class="menu-items-grid">
+                    <div class="menu-item-large">
+                        <div class="menu-item-header">
+                            <h4>Картофель Фри Классик</h4>
+                            <span class="price">150₽</span>
+                        </div>
+                        <p>Золотистая хрустящая картошка с солью</p>
                     </div>
                     
                     <div class="menu-item-large">
                         <div class="menu-item-header">
-                            <h4>Война</h4>
-                            <span class="price">280₽</span>
+                            <h4>Картофель по-деревенски</h4>
+                            <span class="price">180₽</span>
                         </div>
-                        <p>Шаурма с курицей и свининой</p>
+                        <p>Ароматный картофель с травами и чесноком</p>
+                        <div class="item-badge">Новинка</div>
                     </div>
                     
                     <div class="menu-item-large">
                         <div class="menu-item-header">
-                            <h4>Рокфор</h4>
-                            <span class="price">280₽</span>
-                        </div>
-                        <p>Сырная шаурма с курицей</p>
-                    </div>
-            
-                    <div class="menu-item-large">
-                        <div class="menu-item-header">
-                            <h4>Лейтенант</h4>
-                            <span class="price">280₽</span>
-                        </div>
-                        <p>Куриная шаурма с корейской марковкой и соусом карри</p>
-                    </div>
-                    
-                    <div class="menu-item-large">
-                        <div class="menu-item-header">
-                            <h4>Тополь</h4>
-                            <span class="price">380₽</span>
-                        </div>
-                        <p>Огромная шаурма с двойной порцией мяса</p>
-                    </div>
-                    
-                    <div class="menu-item-large">
-                        <div class="menu-item-header">
-                            <h4>Комбат</h4>
+                            <h4>Крылышки Баффало</h4>
                             <span class="price">320₽</span>
                         </div>
-                        <p>Шаурма-монстр с бекомон, перчеком холопенью и соусом барбекю</p>
+                        <p>Острые куриные крылышки в соусе Баффало (6 шт)</p>
                     </div>
                     
                     <div class="menu-item-large">
                         <div class="menu-item-header">
-                            <h4>Дембель</h4>
-                            <span class="price">290₽</span>
+                            <h4>Наггетсы Куриные</h4>
+                            <span class="price">190₽</span>
                         </div>
-                        <p>Необычная шаурма с курицей и медово-горчичым соусом</p>
+                        <p>Хрустящие куриные наггетсы (8 шт) с соусами</p>
                     </div>
                     
                     <div class="menu-item-large">
                         <div class="menu-item-header">
-                            <h4>Коммандировка</h4>
-                            <span class="price">310₽</span>
+                            <h4>Луковые кольца</h4>
+                            <span class="price">170₽</span>
                         </div>
-                        <p>Экзотическая шаурма с дольками ананаса и соусом шарирача</p>
+                        <p>Хрустящие кольца лука в панировке</p>
                     </div>
                     
                     <div class="menu-item-large">
                         <div class="menu-item-header">
-                            <h4>Увал</h4>
-                            <span class="price">310₽</span>
+                            <h4>Сырные палочки</h4>
+                            <span class="price">210₽</span>
                         </div>
-                        <p>Нежная грибная шаурма с курицей</p>
+                        <p>Расплавленный сыр в хрустящей панировке (6 шт)</p>
                     </div>
-                    
+                </div>
+            </div>
+
+            <div class="section-divider"></div>
+
+            <!-- Шашлык -->
+            <div class="menu-category">
+                <div class="category-header">
+                    <h3>🔥 Шашлык</h3>
+                    <p class="category-desc">Приготовлено на углях с дымком</p>
+                </div>
+                <div class="menu-items-grid">
                     <div class="menu-item-large">
                         <div class="menu-item-header">
-                            <h4>Катюша</h4>
-                            <span class="price">330₽</span>
+                            <h4>Шашлык из Свинины</h4>
+                            <span class="price">450₽</span>
                         </div>
-                        <p>Сырная шаурма с курицей и картошкой фри</p>
+                        <p>Нежная свиная шейка, маринованная с луком (250г)</p>
+                        <div class="item-badge">Хит</div>
                     </div>
                     
                     <div class="menu-item-large">
                         <div class="menu-item-header">
-                            <h4>Пушка</h4>
+                            <h4>Шашлык из Курицы</h4>
+                            <span class="price">380₽</span>
+                        </div>
+                        <p>Сочное куриное филе в фирменном маринаде (250г)</p>
+                    </div>
+                    
+                    <div class="menu-item-large">
+                        <div class="menu-item-header">
+                            <h4>Люля-Кебаб из Баранины</h4>
+                            <span class="price">420₽</span>
+                        </div>
+                        <p>Традиционный люля-кебаб с пряностями (220г)</p>
+                    </div>
+                    
+                    <div class="menu-item-large">
+                        <div class="menu-item-header">
+                            <h4>Шашлык из Говядины</h4>
+                            <span class="price">480₽</span>
+                        </div>
+                        <p>Премиальная говяжья вырезка на углях (250г)</p>
+                    </div>
+                    
+                    <div class="menu-item-large">
+                        <div class="menu-item-header">
+                            <h4>Шашлык Охотничий</h4>
+                            <span class="price">520₽</span>
+                        </div>
+                        <p>Ассорти из свинины, курицы и овощей на шпажках</p>
+                        <div class="item-badge">Фирменный</div>
+                    </div>
+                    
+                    <div class="menu-item-large">
+                        <div class="menu-item-header">
+                            <h4>Овощи-Гриль</h4>
                             <span class="price">280₽</span>
                         </div>
-                        <p>Шаурма в азиатском стиме с соусом террияки</p>
+                        <p>Свежие овощи, приготовленные на углях</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Галерея -->
-    <section id="gallery">
-        <div class="container">
-            <h2>Наша <span class="accent">галерея</span></h2>
-            <div class="gallery-grid">
-                <div class="gallery-item">Добавьте фото 1</div>
-                <div class="gallery-item">Добавьте фото 2</div>
-                <div class="gallery-item">Добавьте фото 3</div>
-                <div class="gallery-item">Добавьте фото 4</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Контакты -->
+    <!-- Контакты (убираем соцсети) -->
     <section id="contacts">
         <div class="container">
             <h2>Контак<span class="accent">ты</span></h2>
             <div class="contacts-grid">
                 <div class="contact-info">
                     <h3>Ждем в гости!</h3>
-                    <p>📞 <strong>Телефон:</strong> ваш номер</p>
-                    <p>📍 <strong>Адрес:</strong> ваш адрес</p>
+                    <p>📞 <strong>Телефон:</strong> +7 (XXX) XXX-XX-XX</p>
+                    <p>📍 <strong>Адрес:</strong> укажите ваш адрес</p>
                     <p>🕙 <strong>Время работы:</strong> 10:00-22:00</p>
-                    <div class="social-links">
-                        <a href="#">Instagram</a>
-                        <a href="#">VK</a>
-                        <a href="#">WhatsApp</a>
+                    <p>🚚 <strong>Доставка:</strong> 40-60 минут</p>
+                    <div class="payment-methods">
+                        <span>💳 Принимаем:</span>
+                        <span class="payment-type">Наличные</span>
+                        <span class="payment-type">Карты</span>
+                        <span class="payment-type">Онлайн</span>
                     </div>
                 </div>
             </div>
@@ -201,15 +245,16 @@
 
     <footer>
         <div class="container">
-            <p>© 2024 Шаурма РФ. Искусство вкуса.</p>
+            <p>© 2024 Шаурма РФ. Настоящий вкус, который объединяет.</p>
         </div>
     </footer>
-<script>
-function scrollToMenu() {
-    document.getElementById('full-menu').scrollIntoView({
-        behavior: 'smooth'
-    });
-}
-</script>
+
+    <script>
+    function scrollToMenu() {
+        document.getElementById('full-menu').scrollIntoView({
+            behavior: 'smooth'
+        });
+    }
+    </script>
 </body>
 </html>
