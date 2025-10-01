@@ -10,20 +10,47 @@
 <body>
     <!-- Шапка с навигацией -->
     <header>
+        <!-- Фоновые декоративные элементы -->
+        <div class="header-bg-elements">
+            <div class="bg-ornament ornament-1">✦</div>
+            <div class="bg-ornament ornament-2">❖</div>
+            <div class="bg-ornament ornament-3">✦</div>
+            <div class="bg-ornament ornament-4">❖</div>
+            <div class="floating-element element-1"></div>
+            <div class="floating-element element-2"></div>
+            <div class="floating-element element-3"></div>
+        </div>
+
         <nav class="main-nav">
             <div class="container">
                 <div class="nav-content">
                     <div class="logo">
-                        <span class="logo-text">ШАУРМА <span class="accent">РФ</span></span>
+                        <div class="logo-decoration">
+                            <span class="logo-text">ШАУРМА <span class="accent">РФ</span></span>
+                            <div class="logo-underline"></div>
+                        </div>
                     </div>
                     <div class="nav-info">
-                        <div class="work-time">
-                            <span class="time-icon">🕙</span>
-                            <span>10:00 - 22:00</span>
+                        <div class="nav-item">
+                            <div class="nav-icon">🕙</div>
+                            <div class="nav-details">
+                                <span class="nav-label">Время работы</span>
+                                <span class="nav-value">10:00 - 22:00</span>
+                            </div>
                         </div>
-                        <div class="phone">
-                            <span class="phone-icon">📞</span>
-                            <span>+7 (XXX) XXX-XX-XX</span>
+                        <div class="nav-item">
+                            <div class="nav-icon">📞</div>
+                            <div class="nav-details">
+                                <span class="nav-label">Телефон</span>
+                                <span class="nav-value">+7 (XXX) XXX-XX-XX</span>
+                            </div>
+                        </div>
+                        <div class="nav-item">
+                            <div class="nav-icon">📍</div>
+                            <div class="nav-details">
+                                <span class="nav-label">Адрес</span>
+                                <span class="nav-value">ул. Примерная, 123</span>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -33,380 +60,134 @@
         <div class="hero-content">
             <div class="container">
                 <div class="hero-text">
-                    <div class="hero-title">
-                        <h1 class="main-title">ШАУРМА</h1>
-                        <h1 class="accent-title">РФ</h1>
+                    <!-- Декоративные элементы вокруг заголовка -->
+                    <div class title-decoration>
+                        <div class="title-ornament left">❧</div>
+                        <div class="hero-title">
+                            <h1 class="main-title">ШАУРМА</h1>
+                            <div class="title-separator">
+                                <div class="separator-line"></div>
+                                <div class="separator-dot">•</div>
+                                <div class="separator-line"></div>
+                            </div>
+                            <h1 class="accent-title">РФ</h1>
+                        </div>
+                        <div class="title-ornament right">❧</div>
                     </div>
+
                     <p class="tagline">Настоящий вкус в каждой шаурме и шашлыке</p>
+                    
                     <div class="hero-features">
                         <div class="feature">
-                            <span class="feature-icon">🔥</span>
-                            <span class="feature-text">Готовим на огне</span>
+                            <div class="feature-icon-wrapper">
+                                <span class="feature-icon">🔥</span>
+                                <div class="feature-glow"></div>
+                            </div>
+                            <div class="feature-content">
+                                <span class="feature-text">Готовим на огне</span>
+                                <span class="feature-desc">Натуральный дымный аромат</span>
+                            </div>
                         </div>
                         <div class="feature">
-                            <span class="feature-icon">🍃</span>
-                            <span class="feature-text">Свежие продукты</span>
+                            <div class="feature-icon-wrapper">
+                                <span class="feature-icon">🍃</span>
+                                <div class="feature-glow"></div>
+                            </div>
+                            <div class="feature-content">
+                                <span class="feature-text">Свежие продукты</span>
+                                <span class="feature-desc">Ежедневные поставки</span>
+                            </div>
                         </div>
                         <div class="feature">
-                            <span class="feature-icon">⚡</span>
-                            <span class="feature-text">Быстрая доставка</span>
+                            <div class="feature-icon-wrapper">
+                                <span class="feature-icon">⚡</span>
+                                <div class="feature-glow"></div>
+                            </div>
+                            <div class="feature-content">
+                                <span class="feature-text">Быстрая доставка</span>
+                                <span class="feature-desc">40-60 минут по городу</span>
+                            </div>
                         </div>
                     </div>
-                    <button class="cta-button" onclick="scrollToMenu()">
-                        <span class="btn-text">Смотреть меню</span>
-                        <span class="btn-arrow">→</span>
-                    </button>
+
+                    <div class="hero-actions">
+                        <button class="cta-button primary" onclick="scrollToMenu()">
+                            <span class="btn-text">Смотреть меню</span>
+                            <span class="btn-arrow">→</span>
+                            <div class="button-shine"></div>
+                        </button>
+                        <button class="cta-button secondary" onclick="scrollToContacts()">
+                            <span class="btn-text">Заказать сейчас</span>
+                            <div class="button-shine"></div>
+                        </button>
+                    </div>
+
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <div class="stat-number">5+</div>
+                            <div class="stat-label">лет опыта</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">1000+</div>
+                            <div class="stat-label">довольных клиентов</div>
+                        </div>
+                        <div class="stat">
+                            <div class="stat-number">50+</div>
+                            <div class="stat-label">видов блюд</div>
+                        </div>
+                    </div>
                 </div>
-                <div class="hero-image">
-                    <div class="image-placeholder">
-                        <span class="placeholder-text">Фото шаурмы</span>
+
+                <div class="hero-visual">
+                    <div class="visual-container">
+                        <div class="main-image">
+                            <div class="image-frame">
+                                <div class="frame-border"></div>
+                                <div class="image-placeholder">
+                                    <span class="placeholder-text">Фото шаурмы</span>
+                                    <div class="image-overlay">
+                                        <div class="overlay-text">Сочная • Ароматная • Свежая</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-badges">
+                            <div class="badge badge-1">
+                                <span class="badge-icon">🏆</span>
+                                <span class="badge-text">Хит сезона</span>
+                            </div>
+                            <div class="badge badge-2">
+                                <span class="badge-icon">⭐</span>
+                                <span class="badge-text">Премиум качество</span>
+                            </div>
+                            <div class="badge badge-3">
+                                <span class="badge-icon">👑</span>
+                                <span class="badge-text">Лучший вкус</span>
+                            </div>
+                        </div>
+                        <div class="decoration-circles">
+                            <div class="circle circle-1"></div>
+                            <div class="circle circle-2"></div>
+                            <div class="circle circle-3"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        
-        <div class="header-decoration">
-            <div class="decoration-item"></div>
-            <div class="decoration-item"></div>
-            <div class="decoration-item"></div>
+
+        <!-- Анимированные элементы внизу шапки -->
+        <div class="header-bottom">
+            <div class="scroll-indicator">
+                <div class="scroll-arrow"></div>
+                <span class="scroll-text">Листайте вниз</span>
+            </div>
+            <div class="wave-decoration">
+                <div class="wave"></div>
+                <div class="wave"></div>
+                <div class="wave"></div>
+            </div>
         </div>
     </header>
 
-    <!-- Декоративный разделитель -->
-    <div class="section-divider">
-        <div class="divider-ornament">✦</div>
-    </div>
-
-    <!-- О нас -->
-    <section id="about">
-        <div class="container">
-            <div class="section-frame">
-                <div class="frame-corner top-left"></div>
-                <div class="frame-corner top-right"></div>
-                <div class="frame-corner bottom-left"></div>
-                <div class="frame-corner bottom-right"></div>
-                
-                <h2>О <span class="accent">нас</span></h2>
-                <p class="section-subtitle">Мы создаем вкус, который запоминается</p>
-                
-                <div class="info-grid">
-                    <div class="info-item">
-                        <div class="info-icon">🔥</div>
-                        <h3>Готовим с душой</h3>
-                        <p>Каждое блюдо готовится с особым вниманием к деталям и традициям</p>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">🌿</div>
-                        <h3>Свежие ингредиенты</h3>
-                        <p>Используем только свежие продукты от проверенных поставщиков</p>
-                    </div>
-                    <div class="info-item">
-                        <div class="info-icon">👨‍🍳</div>
-                        <h3>Опытные повара</h3>
-                        <p>Наши мастера имеют многолетний опыт в приготовлении шаурмы и шашлыка</p>
-                    </div>
-                </div>
-
-                <div class="stats-grid">
-                    <div class="stat-item">
-                        <div class="stat-number">5+</div>
-                        <div class="stat-label">лет на рынке</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">1000+</div>
-                        <div class="stat-label">довольных клиентов</div>
-                    </div>
-                    <div class="stat-item">
-                        <div class="stat-number">50+</div>
-                        <div class="stat-label">видов блюд</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Декоративный разделитель -->
-    <div class="section-divider">
-        <div class="divider-ornament">❖</div>
-    </div>
-
-    <!-- Навигация по меню -->
-    <section id="menu-navigation">
-        <div class="container">
-            <div class="section-frame">
-                <div class="frame-corner top-left"></div>
-                <div class="frame-corner top-right"></div>
-                <div class="frame-corner bottom-left"></div>
-                <div class="frame-corner bottom-right"></div>
-                
-                <h2>Наше <span class="accent">меню</span></h2>
-                <p class="section-subtitle">Выберите категорию для просмотра блюд</p>
-                
-                <div class="menu-categories">
-                    <button class="category-btn active" data-category="shaurma">
-                        <span class="btn-icon">🎯</span>
-                        <span class="btn-text">Шаурма</span>
-                    </button>
-                    <button class="category-btn" data-category="fry">
-                        <span class="btn-icon">🍟</span>
-                        <span class="btn-text">Фритюр</span>
-                    </button>
-                    <button class="category-btn" data-category="shashlik">
-                        <span class="btn-icon">🔥</span>
-                        <span class="btn-text">Шашлык</span>
-                    </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Контент меню -->
-    <section id="menu-content">
-        <div class="container">
-            <!-- Шаурма -->
-            <div id="shaurma" class="menu-category active">
-                <div class="category-header">
-                    <div class="category-icon">🎯</div>
-                    <h3>Шаурма</h3>
-                    <p class="category-desc">Свежеприготовленная в лаваше с сочными начинками по уникальным рецептам</p>
-                </div>
-                
-                <div class="menu-highlight">
-                    <div class="highlight-badge">Популярное</div>
-                    <p>Попробуйте нашу фирменную шаурму "Аутмит" - хит сезона!</p>
-                </div>
-                
-                <div class="menu-items-grid">
-                    <!-- Блюда шаурмы -->
-                    <div class="menu-item-large">
-                        <div class="menu-item-decoration"></div>
-                        <div class="menu-item-header">
-                            <h4>Аутмит</h4>
-                            <span class="price">320₽</span>
-                        </div>
-                        <p>Фирменная шаурма с тремя видами мяса и соусом "Аутмит"</p>
-                        <div class="item-badge">Хит</div>
-                        <div class="item-weight">≈450г</div>
-                    </div>
-                    
-                    <div class="menu-item-large">
-                        <div class="menu-item-decoration"></div>
-                        <div class="menu-item-header">
-                            <h4>Сержант</h4>
-                            <span class="price">280₽</span>
-                        </div>
-                        <p>Классическая шаурма с говядиной и свежими овощами</p>
-                        <div class="item-weight">≈400г</div>
-                    </div>
-                    
-                    <div class="menu-item-large">
-                        <div class="menu-item-decoration"></div>
-                        <div class="menu-item-header">
-                            <h4>ТТ</h4>
-                            <span class="price">300₽</span>
-                        </div>
-                        <p>Острая шаурма с перцем чили и томатами для ценителей</p>
-                        <div class="item-badge spicy">Остро</div>
-                        <div class="item-weight">≈420г</div>
-                    </div>
-                    
-                    <div class="menu-item-large">
-                        <div class="menu-item-decoration"></div>
-                        <div class="menu-item-header">
-                            <h4>Прапорщик</h4>
-                            <span class="price">350₽</span>
-                        </div>
-                        <p>Премиум шаурма с телятиной и шампиньонами</p>
-                        <div class="item-badge premium">Премиум</div>
-                        <div class="item-weight">≈480г</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Блюда во фритюре -->
-            <div id="fry" class="menu-category">
-                <div class="category-header">
-                    <div class="category-icon">🍟</div>
-                    <h3>Блюда во фритюре</h3>
-                    <p class="category-desc">Хрустящие и золотистые шедевры с выбором соусов</p>
-                </div>
-                
-                <div class="menu-items-grid">
-                    <div class="menu-item-large">
-                        <div class="menu-item-decoration"></div>
-                        <div class="menu-item-header">
-                            <h4>Картофель Фри Классик</h4>
-                            <span class="price">150₽</span>
-                        </div>
-                        <p>Золотистая хрустящая картошка с морской солью</p>
-                        <div class="item-weight">стандартная порция</div>
-                    </div>
-                    
-                    <div class="menu-item-large">
-                        <div class="menu-item-decoration"></div>
-                        <div class="menu-item-header">
-                            <h4>Картофель по-деревенски</h4>
-                            <span class="price">180₽</span>
-                        </div>
-                        <p>Ароматный картофель с травами и чесноком</p>
-                        <div class="item-badge">Новинка</div>
-                        <div class="item-weight">стандартная порция</div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Шашлык -->
-            <div id="shashlik" class="menu-category">
-                <div class="category-header">
-                    <div class="category-icon">🔥</div>
-                    <h3>Шашлык</h3>
-                    <p class="category-desc">Приготовлено на углях с дымком по традиционным рецептам</p>
-                </div>
-                
-                <div class="menu-highlight">
-                    <div class="highlight-badge">Рекомендуем</div>
-                    <p>Все шашлыки подаются с лепешкой и соусом на выбор</p>
-                </div>
-                
-                <div class="menu-items-grid">
-                    <div class="menu-item-large">
-                        <div class="menu-item-decoration"></div>
-                        <div class="menu-item-header">
-                            <h4>Шашлык из Свинины</h4>
-                            <span class="price">450₽</span>
-                        </div>
-                        <p>Нежная свиная шейка, маринованная с луком и специями</p>
-                        <div class="item-badge">Хит</div>
-                        <div class="item-weight">250г</div>
-                    </div>
-                    
-                    <div class="menu-item-large">
-                        <div class="menu-item-decoration"></div>
-                        <div class="menu-item-header">
-                            <h4>Шашлык из Курицы</h4>
-                            <span class="price">380₽</span>
-                        </div>
-                        <p>Сочное куриное филе в фирменном маринаде</p>
-                        <div class="item-weight">250г</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Декоративный разделитель -->
-    <div class="section-divider">
-        <div class="divider-ornament">✦</div>
-    </div>
-
-    <!-- Контакты -->
-    <section id="contacts">
-        <div class="container">
-            <div class="section-frame">
-                <div class="frame-corner top-left"></div>
-                <div class="frame-corner top-right"></div>
-                <div class="frame-corner bottom-left"></div>
-                <div class="frame-corner bottom-right"></div>
-                
-                <h2>Контак<span class="accent">ты</span></h2>
-                <p class="section-subtitle">Приходите в гости или заказывайте доставку</p>
-                
-                <div class="contacts-grid">
-                    <div class="contact-info">
-                        <div class="contact-item">
-                            <div class="contact-icon">📍</div>
-                            <div class="contact-details">
-                                <h4>Адрес</h4>
-                                <p>ул. Примерная, 123<br>Москва, 123456</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">📞</div>
-                            <div class="contact-details">
-                                <h4>Телефон</h4>
-                                <p>+7 (XXX) XXX-XX-XX</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">🕙</div>
-                            <div class="contact-details">
-                                <h4>Время работы</h4>
-                                <p>Ежедневно: 10:00 - 22:00<br>Без перерывов и выходных</p>
-                            </div>
-                        </div>
-                        
-                        <div class="contact-item">
-                            <div class="contact-icon">🚚</div>
-                            <div class="contact-details">
-                                <h4>Доставка</h4>
-                                <p>40-60 минут в пределах города<br>Минимальный заказ: 500₽</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="map-placeholder">
-                        <div class="map-icon">🗺️</div>
-                        <p>Карта расположения</p>
-                        <span class="map-note">Мы находимся в центре города</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <span class="logo-text">ШАУРМА <span class="accent">РФ</span></span>
-                    <p>Настоящий вкус, который объединяет</p>
-                </div>
-                <div class="footer-info">
-                    <p>© 2024 Шаурма РФ. Все права защищены.</p>
-                    <p>Сделано с ❤️ для ценителей вкусной еды</p>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <script>
-    function scrollToMenu() {
-        document.getElementById('menu-navigation').scrollIntoView({
-            behavior: 'smooth'
-        });
-    }
-
-    // Обработчики для кнопок категорий
-    document.addEventListener('DOMContentLoaded', function() {
-        const categoryButtons = document.querySelectorAll('.category-btn');
-        
-        categoryButtons.forEach(button => {
-            button.addEventListener('click', function() {
-                const categoryId = this.getAttribute('data-category');
-                
-                // Убираем активный класс у всех кнопок
-                categoryButtons.forEach(btn => btn.classList.remove('active'));
-                // Добавляем активный класс нажатой кнопке
-                this.classList.add('active');
-                
-                // Скрываем все категории
-                const categories = document.querySelectorAll('.menu-category');
-                categories.forEach(cat => cat.classList.remove('active'));
-                
-                // Показываем выбранную категорию
-                const activeCategory = document.getElementById(categoryId);
-                activeCategory.classList.add('active');
-                
-                // Плавная прокрутка к меню
-                document.getElementById('menu-content').scrollIntoView({
-                    behavior: 'smooth',
-                    block: 'start'
-                });
-            });
-        });
-    });
-    </script>
-</body>
-</html>
+    <!-- Остальной код остается без изменений -->
+    <!-- ... -->
