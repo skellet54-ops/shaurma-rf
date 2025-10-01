@@ -74,6 +74,10 @@ body {
     font-size: 0.95em;
 }
 
+.time-icon, .phone-icon {
+    font-size: 1.1em;
+}
+
 /* Шапка */
 header {
     background: linear-gradient(135deg, rgba(42, 38, 31, 0.9) 0%, rgba(58, 51, 41, 0.95) 100%);
@@ -124,6 +128,11 @@ header {
     align-items: center;
     gap: 8px;
     color: var(--text-light);
+    font-size: 0.95em;
+}
+
+.feature-icon {
+    font-size: 1.2em;
 }
 
 .image-placeholder {
@@ -136,6 +145,7 @@ header {
     justify-content: center;
     border: 2px dashed rgba(139, 69, 19, 0.4);
     color: var(--text-muted);
+    font-size: 1.1em;
 }
 
 /* Кнопка */
@@ -182,11 +192,28 @@ h2 {
     border-radius: 15px;
     text-align: center;
     border: 1px solid rgba(139, 69, 19, 0.3);
+    transition: all 0.3s ease;
+}
+
+.info-item:hover {
+    transform: translateY(-5px);
+    border-color: var(--dark-gold);
 }
 
 .info-item h3 {
     color: var(--dark-gold);
     margin-bottom: 15px;
+    font-size: 1.3em;
+}
+
+.info-item p {
+    color: var(--text-light);
+}
+
+.icon {
+    font-size: 3em;
+    margin-bottom: 20px;
+    opacity: 0.9;
 }
 
 /* Навигация по меню */
@@ -232,6 +259,7 @@ h2 {
     color: var(--text-cream);
     border-color: var(--dark-gold);
     box-shadow: 0 8px 25px rgba(139, 69, 19, 0.5);
+    transform: translateY(-2px);
 }
 
 .btn-icon {
@@ -242,6 +270,7 @@ h2 {
 #menu-content {
     background: var(--dark-cream);
     padding: 60px 0;
+    min-height: 600px;
 }
 
 .menu-category {
@@ -258,27 +287,27 @@ h2 {
     to { opacity: 1; transform: translateY(0); }
 }
 
-/* Меню */
-.menu-category {
-    margin-bottom: 60px;
-}
-
+/* Заголовки категорий */
 .category-header {
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
 }
 
 .category-header h3 {
-    font-size: 2.2em;
+    font-size: 2.4em;
     color: var(--text-cream);
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 
 .category-desc {
     color: var(--text-light);
-    font-size: 1.1em;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: 0 auto;
+    line-height: 1.5;
 }
 
+/* Сетка меню */
 .menu-items-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -334,6 +363,7 @@ h2 {
     border-radius: 15px;
     font-size: 0.8em;
     font-weight: 600;
+    text-transform: uppercase;
 }
 
 /* Контакты */
@@ -350,11 +380,13 @@ h2 {
     color: var(--dark-gold);
     margin-bottom: 25px;
     text-align: center;
+    font-size: 1.8em;
 }
 
 .contact-info p {
     margin-bottom: 15px;
     color: var(--text-light);
+    font-size: 1.1em;
 }
 
 .payment-methods {
@@ -370,6 +402,7 @@ h2 {
     border-radius: 12px;
     font-size: 0.9em;
     margin-left: 8px;
+    border: 1px solid rgba(184, 134, 11, 0.3);
 }
 
 /* Подвал */
@@ -378,6 +411,10 @@ footer {
     text-align: center;
     padding: 40px 0;
     border-top: 1px solid rgba(139, 69, 19, 0.3);
+}
+
+footer p {
+    color: var(--text-light);
 }
 
 /* Адаптивность */
@@ -428,5 +465,9 @@ footer {
     
     .contact-info {
         padding: 30px 20px;
+    }
+    
+    h2 {
+        font-size: 2.5em;
     }
 }

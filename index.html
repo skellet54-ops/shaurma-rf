@@ -89,15 +89,15 @@
         <div class="container">
             <h2>Наше <span class="accent">меню</span></h2>
             <div class="menu-categories">
-                <button class="category-btn active" onclick="showCategory('shaurma')">
+                <button class="category-btn active" data-category="shaurma">
                     <span class="btn-icon">🎯</span>
                     Шаурма
                 </button>
-                <button class="category-btn" onclick="showCategory('fry')">
+                <button class="category-btn" data-category="fry">
                     <span class="btn-icon">🍟</span>
                     Фритюр
                 </button>
-                <button class="category-btn" onclick="showCategory('shashlik')">
+                <button class="category-btn" data-category="shashlik">
                     <span class="btn-icon">🔥</span>
                     Шашлык
                 </button>
@@ -105,7 +105,7 @@
         </div>
     </section>
 
-    <!-- Контент меню (скрывается/показывается) -->
+    <!-- Контент меню -->
     <section id="menu-content">
         <div class="container">
             <!-- Шаурма -->
@@ -334,32 +334,35 @@
         });
     }
 
-    function showCategory(categoryId) {
-        // Скрываем все категории
-        const categories = document.querySelectorAll('.menu-category');
-        categories.forEach(cat => {
-            cat.classList.remove('active');
-        });
-
-        // Показываем выбранную категорию
-        const activeCategory = document.getElementById(categoryId);
-        activeCategory.classList.add('active');
-
-        // Обновляем активные кнопки
-        const buttons = document.querySelectorAll('.category-btn');
-        buttons.forEach(btn => {
-            btn.classList.remove('active');
-        });
+    // Обработчики для кнопок категорий
+    document.addEventListener('DOMContentLoaded', function() {
+        const categoryButtons = document.querySelectorAll('.category-btn');
         
-        // Активируем нажатую кнопку
-        event.target.classList.add('active');
-
-        // Плавная прокрутка к меню
-        document.getElementById('menu-content').scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
+        categoryButtons.forEach(button => {
+            button.addEventListener('click', function() {
+                const categoryId = this.getAttribute('data-category');
+                
+                // Убираем активный класс у всех кнопок
+                categoryButtons.forEach(btn => btn.classList.remove('active'));
+                // Добавляем активный класс нажатой кнопке
+                this.classList.add('active');
+                
+                // Скрываем все категории
+                const categories = document.querySelectorAll('.menu-category');
+                categories.forEach(cat => cat.classList.remove('active'));
+                
+                // Показываем выбранную категорию
+                const activeCategory = document.getElementById(categoryId);
+                activeCategory.classList.add('active');
+                
+                // Плавная прокрутка к меню
+                document.getElementById('menu-content').scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            });
         });
-    }
+    });
     </script>
 </body>
 </html>
