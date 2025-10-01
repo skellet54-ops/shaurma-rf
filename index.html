@@ -84,13 +84,32 @@
         </div>
     </section>
 
-    <!-- Полное меню с категориями -->
-    <section id="full-menu">
+    <!-- Навигация по меню -->
+    <section id="menu-navigation">
         <div class="container">
             <h2>Наше <span class="accent">меню</span></h2>
-            
+            <div class="menu-categories">
+                <button class="category-btn active" onclick="showCategory('shaurma')">
+                    <span class="btn-icon">🎯</span>
+                    Шаурма
+                </button>
+                <button class="category-btn" onclick="showCategory('fry')">
+                    <span class="btn-icon">🍟</span>
+                    Фритюр
+                </button>
+                <button class="category-btn" onclick="showCategory('shashlik')">
+                    <span class="btn-icon">🔥</span>
+                    Шашлык
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контент меню (скрывается/показывается) -->
+    <section id="menu-content">
+        <div class="container">
             <!-- Шаурма -->
-            <div class="menu-category">
+            <div id="shaurma" class="menu-category active">
                 <div class="category-header">
                     <h3>🎯 Шаурма</h3>
                     <p class="category-desc">Свежеприготовленная в лаваше с сочными начинками</p>
@@ -163,10 +182,8 @@
                 </div>
             </div>
 
-            <div class="section-divider"></div>
-
             <!-- Блюда во фритюре -->
-            <div class="menu-category">
+            <div id="fry" class="menu-category">
                 <div class="category-header">
                     <h3>🍟 Блюда во фритюре</h3>
                     <p class="category-desc">Хрустящие и золотистые шедевры</p>
@@ -223,10 +240,8 @@
                 </div>
             </div>
 
-            <div class="section-divider"></div>
-
             <!-- Шашлык -->
-            <div class="menu-category">
+            <div id="shashlik" class="menu-category">
                 <div class="category-header">
                     <h3>🔥 Шашлык</h3>
                     <p class="category-desc">Приготовлено на углях с дымком</p>
@@ -314,8 +329,35 @@
 
     <script>
     function scrollToMenu() {
-        document.getElementById('full-menu').scrollIntoView({
+        document.getElementById('menu-navigation').scrollIntoView({
             behavior: 'smooth'
+        });
+    }
+
+    function showCategory(categoryId) {
+        // Скрываем все категории
+        const categories = document.querySelectorAll('.menu-category');
+        categories.forEach(cat => {
+            cat.classList.remove('active');
+        });
+
+        // Показываем выбранную категорию
+        const activeCategory = document.getElementById(categoryId);
+        activeCategory.classList.add('active');
+
+        // Обновляем активные кнопки
+        const buttons = document.querySelectorAll('.category-btn');
+        buttons.forEach(btn => {
+            btn.classList.remove('active');
+        });
+        
+        // Активируем нажатую кнопку
+        event.target.classList.add('active');
+
+        // Плавная прокрутка к меню
+        document.getElementById('menu-content').scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
         });
     }
     </script>
