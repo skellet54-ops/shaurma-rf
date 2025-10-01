@@ -72,48 +72,90 @@
         </div>
     </header>
 
-    <!-- Остальной код без изменений -->
+    <!-- Декоративный разделитель -->
+    <div class="section-divider">
+        <div class="divider-ornament">✦</div>
+    </div>
+
     <!-- О нас -->
     <section id="about">
         <div class="container">
-            <h2>О <span class="accent">нас</span></h2>
-            <div class="info-grid">
-                <div class="info-item">
-                    <div class="icon">🕙</div>
-                    <h3>График работы</h3>
-                    <p>Ежедневно с 10:00 до 22:00</p>
+            <div class="section-frame">
+                <div class="frame-corner top-left"></div>
+                <div class="frame-corner top-right"></div>
+                <div class="frame-corner bottom-left"></div>
+                <div class="frame-corner bottom-right"></div>
+                
+                <h2>О <span class="accent">нас</span></h2>
+                <p class="section-subtitle">Мы создаем вкус, который запоминается</p>
+                
+                <div class="info-grid">
+                    <div class="info-item">
+                        <div class="info-icon">🔥</div>
+                        <h3>Готовим с душой</h3>
+                        <p>Каждое блюдо готовится с особым вниманием к деталям и традициям</p>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">🌿</div>
+                        <h3>Свежие ингредиенты</h3>
+                        <p>Используем только свежие продукты от проверенных поставщиков</p>
+                    </div>
+                    <div class="info-item">
+                        <div class="info-icon">👨‍🍳</div>
+                        <h3>Опытные повара</h3>
+                        <p>Наши мастера имеют многолетний опыт в приготовлении шаурмы и шашлыка</p>
+                    </div>
                 </div>
-                <div class="info-item">
-                    <div class="icon">📍</div>
-                    <h3>Адрес</h3>
-                    <p>Укажите ваш адрес здесь</p>
-                </div>
-                <div class="info-item">
-                    <div class="icon">📞</div>
-                    <h3>Телефон</h3>
-                    <p>+7 (XXX) XXX-XX-XX</p>
+
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">лет на рынке</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">довольных клиентов</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">видов блюд</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Декоративный разделитель -->
+    <div class="section-divider">
+        <div class="divider-ornament">❖</div>
+    </div>
+
     <!-- Навигация по меню -->
     <section id="menu-navigation">
         <div class="container">
-            <h2>Наше <span class="accent">меню</span></h2>
-            <div class="menu-categories">
-                <button class="category-btn active" data-category="shaurma">
-                    <span class="btn-icon">🎯</span>
-                    <span class="btn-text">Шаурма</span>
-                </button>
-                <button class="category-btn" data-category="fry">
-                    <span class="btn-icon">🍟</span>
-                    <span class="btn-text">Фритюр</span>
-                </button>
-                <button class="category-btn" data-category="shashlik">
-                    <span class="btn-icon">🔥</span>
-                    <span class="btn-text">Шашлык</span>
-                </button>
+            <div class="section-frame">
+                <div class="frame-corner top-left"></div>
+                <div class="frame-corner top-right"></div>
+                <div class="frame-corner bottom-left"></div>
+                <div class="frame-corner bottom-right"></div>
+                
+                <h2>Наше <span class="accent">меню</span></h2>
+                <p class="section-subtitle">Выберите категорию для просмотра блюд</p>
+                
+                <div class="menu-categories">
+                    <button class="category-btn active" data-category="shaurma">
+                        <span class="btn-icon">🎯</span>
+                        <span class="btn-text">Шаурма</span>
+                    </button>
+                    <button class="category-btn" data-category="fry">
+                        <span class="btn-icon">🍟</span>
+                        <span class="btn-text">Фритюр</span>
+                    </button>
+                    <button class="category-btn" data-category="shashlik">
+                        <span class="btn-icon">🔥</span>
+                        <span class="btn-text">Шашлык</span>
+                    </button>
+                </div>
             </div>
         </div>
     </section>
@@ -124,96 +166,191 @@
             <!-- Шаурма -->
             <div id="shaurma" class="menu-category active">
                 <div class="category-header">
-                    <h3>🎯 Шаурма</h3>
-                    <p class="category-desc">Свежеприготовленная в лаваше с сочными начинками</p>
+                    <div class="category-icon">🎯</div>
+                    <h3>Шаурма</h3>
+                    <p class="category-desc">Свежеприготовленная в лаваше с сочными начинками по уникальным рецептам</p>
                 </div>
+                
+                <div class="menu-highlight">
+                    <div class="highlight-badge">Популярное</div>
+                    <p>Попробуйте нашу фирменную шаурму "Аутмит" - хит сезона!</p>
+                </div>
+                
                 <div class="menu-items-grid">
+                    <!-- Блюда шаурмы -->
                     <div class="menu-item-large">
+                        <div class="menu-item-decoration"></div>
                         <div class="menu-item-header">
                             <h4>Аутмит</h4>
                             <span class="price">320₽</span>
                         </div>
                         <p>Фирменная шаурма с тремя видами мяса и соусом "Аутмит"</p>
                         <div class="item-badge">Хит</div>
+                        <div class="item-weight">≈450г</div>
                     </div>
                     
                     <div class="menu-item-large">
+                        <div class="menu-item-decoration"></div>
                         <div class="menu-item-header">
                             <h4>Сержант</h4>
                             <span class="price">280₽</span>
                         </div>
-                        <p>Классическая шаурма с говядиной и овощами</p>
+                        <p>Классическая шаурма с говядиной и свежими овощами</p>
+                        <div class="item-weight">≈400г</div>
                     </div>
                     
-                    <!-- Остальные блюда шаурмы -->
+                    <div class="menu-item-large">
+                        <div class="menu-item-decoration"></div>
+                        <div class="menu-item-header">
+                            <h4>ТТ</h4>
+                            <span class="price">300₽</span>
+                        </div>
+                        <p>Острая шаурма с перцем чили и томатами для ценителей</p>
+                        <div class="item-badge spicy">Остро</div>
+                        <div class="item-weight">≈420г</div>
+                    </div>
+                    
+                    <div class="menu-item-large">
+                        <div class="menu-item-decoration"></div>
+                        <div class="menu-item-header">
+                            <h4>Прапорщик</h4>
+                            <span class="price">350₽</span>
+                        </div>
+                        <p>Премиум шаурма с телятиной и шампиньонами</p>
+                        <div class="item-badge premium">Премиум</div>
+                        <div class="item-weight">≈480г</div>
+                    </div>
                 </div>
             </div>
 
             <!-- Блюда во фритюре -->
             <div id="fry" class="menu-category">
                 <div class="category-header">
-                    <h3>🍟 Блюда во фритюре</h3>
-                    <p class="category-desc">Хрустящие и золотистые шедевры</p>
+                    <div class="category-icon">🍟</div>
+                    <h3>Блюда во фритюре</h3>
+                    <p class="category-desc">Хрустящие и золотистые шедевры с выбором соусов</p>
                 </div>
+                
                 <div class="menu-items-grid">
                     <div class="menu-item-large">
+                        <div class="menu-item-decoration"></div>
                         <div class="menu-item-header">
                             <h4>Картофель Фри Классик</h4>
                             <span class="price">150₽</span>
                         </div>
-                        <p>Золотистая хрустящая картошка с солью</p>
+                        <p>Золотистая хрустящая картошка с морской солью</p>
+                        <div class="item-weight">стандартная порция</div>
                     </div>
                     
                     <div class="menu-item-large">
+                        <div class="menu-item-decoration"></div>
                         <div class="menu-item-header">
                             <h4>Картофель по-деревенски</h4>
                             <span class="price">180₽</span>
                         </div>
                         <p>Ароматный картофель с травами и чесноком</p>
                         <div class="item-badge">Новинка</div>
+                        <div class="item-weight">стандартная порция</div>
                     </div>
-                    
-                    <!-- Остальные блюда фритюра -->
                 </div>
             </div>
 
             <!-- Шашлык -->
             <div id="shashlik" class="menu-category">
                 <div class="category-header">
-                    <h3>🔥 Шашлык</h3>
-                    <p class="category-desc">Приготовлено на углях с дымком</p>
+                    <div class="category-icon">🔥</div>
+                    <h3>Шашлык</h3>
+                    <p class="category-desc">Приготовлено на углях с дымком по традиционным рецептам</p>
                 </div>
+                
+                <div class="menu-highlight">
+                    <div class="highlight-badge">Рекомендуем</div>
+                    <p>Все шашлыки подаются с лепешкой и соусом на выбор</p>
+                </div>
+                
                 <div class="menu-items-grid">
                     <div class="menu-item-large">
+                        <div class="menu-item-decoration"></div>
                         <div class="menu-item-header">
                             <h4>Шашлык из Свинины</h4>
                             <span class="price">450₽</span>
                         </div>
-                        <p>Нежная свиная шейка, маринованная с луком (250г)</p>
+                        <p>Нежная свиная шейка, маринованная с луком и специями</p>
                         <div class="item-badge">Хит</div>
+                        <div class="item-weight">250г</div>
                     </div>
                     
-                    <!-- Остальные блюда шашлыка -->
+                    <div class="menu-item-large">
+                        <div class="menu-item-decoration"></div>
+                        <div class="menu-item-header">
+                            <h4>Шашлык из Курицы</h4>
+                            <span class="price">380₽</span>
+                        </div>
+                        <p>Сочное куриное филе в фирменном маринаде</p>
+                        <div class="item-weight">250г</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Декоративный разделитель -->
+    <div class="section-divider">
+        <div class="divider-ornament">✦</div>
+    </div>
+
     <!-- Контакты -->
     <section id="contacts">
         <div class="container">
-            <h2>Контак<span class="accent">ты</span></h2>
-            <div class="contact-info">
-                <h3>Ждем в гости!</h3>
-                <p>📞 <strong>Телефон:</strong> +7 (XXX) XXX-XX-XX</p>
-                <p>📍 <strong>Адрес:</strong> укажите ваш адрес</p>
-                <p>🕙 <strong>Время работы:</strong> 10:00-22:00</p>
-                <p>🚚 <strong>Доставка:</strong> 40-60 минут</p>
-                <div class="payment-methods">
-                    <span>💳 Принимаем:</span>
-                    <span class="payment-type">Наличные</span>
-                    <span class="payment-type">Карты</span>
-                    <span class="payment-type">Онлайн</span>
+            <div class="section-frame">
+                <div class="frame-corner top-left"></div>
+                <div class="frame-corner top-right"></div>
+                <div class="frame-corner bottom-left"></div>
+                <div class="frame-corner bottom-right"></div>
+                
+                <h2>Контак<span class="accent">ты</span></h2>
+                <p class="section-subtitle">Приходите в гости или заказывайте доставку</p>
+                
+                <div class="contacts-grid">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-details">
+                                <h4>Адрес</h4>
+                                <p>ул. Примерная, 123<br>Москва, 123456</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-details">
+                                <h4>Телефон</h4>
+                                <p>+7 (XXX) XXX-XX-XX</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🕙</div>
+                            <div class="contact-details">
+                                <h4>Время работы</h4>
+                                <p>Ежедневно: 10:00 - 22:00<br>Без перерывов и выходных</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">🚚</div>
+                            <div class="contact-details">
+                                <h4>Доставка</h4>
+                                <p>40-60 минут в пределах города<br>Минимальный заказ: 500₽</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="map-placeholder">
+                        <div class="map-icon">🗺️</div>
+                        <p>Карта расположения</p>
+                        <span class="map-note">Мы находимся в центре города</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -221,7 +358,16 @@
 
     <footer>
         <div class="container">
-            <p>© 2024 Шаурма РФ. Настоящий вкус, который объединяет.</p>
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-text">ШАУРМА <span class="accent">РФ</span></span>
+                    <p>Настоящий вкус, который объединяет</p>
+                </div>
+                <div class="footer-info">
+                    <p>© 2024 Шаурма РФ. Все права защищены.</p>
+                    <p>Сделано с ❤️ для ценителей вкусной еды</p>
+                </div>
+            </div>
         </div>
     </footer>
 
